@@ -87,7 +87,95 @@ const Home = () => {
       <CategoryCarousel />
 
 
+      <section className="w-full bg-white py-14 sm:py-16 md:py-20 px-5 sm:px-8 md:px-16">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+    
+    {/* LEFT CONTENT */}
+    <div className="text-center md:text-left">
+      
+      <h2 className="
+        text-3xl 
+        sm:text-4xl 
+        md:text-5xl 
+        font-extrabold 
+        text-[#000091] 
+        leading-tight 
+        mb-4 sm:mb-6
+      ">
+        WHO ARE WE?
+      </h2>
+
+      <div className="w-16 sm:w-20 h-1 bg-[#000091] mb-6 sm:mb-8 mx-auto md:mx-0"></div>
+
+      <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+        Born from friendship and fueled by football, we are four friends 
+        building a jersey brand for true fans.
+      </p>
+
+      <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+        What started as late-night match debates is now a startup dedicated 
+        to creating premium football jerseys that represent passion, loyalty, 
+        and unforgettable moments.
+      </p>
+
+      <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+        Crafted in India with comfort and style in mind — because football 
+        isn’t just a sport. It’s an emotion.
+      </p>
+
+      <button className="
+        mt-6 sm:mt-8
+        px-6 sm:px-8 
+        py-2.5 sm:py-3 
+        bg-[#000091] 
+        text-white 
+        font-semibold 
+        rounded-full 
+        shadow-lg 
+        hover:scale-105 
+        transition 
+        duration-300
+      ">
+        Explore Collection
+      </button>
     </div>
+
+    {/* RIGHT SIDE BOX */}
+    <div className="relative mt-8 md:mt-0">
+      
+      <div className="
+        absolute 
+        -top-4 -left-4 
+        sm:-top-6 sm:-left-6 
+        w-full h-full 
+        border-2 sm:border-4 
+        border-[#000091] 
+        rounded-2xl
+      "></div>
+
+      <div className="relative bg-gray-100 p-6 sm:p-8 md:p-10 rounded-2xl shadow-xl">
+        <h3 className="text-xl sm:text-2xl font-bold text-[#000091] mb-3 sm:mb-4">
+          4 Friends. 1 Dream.
+        </h3>
+
+        <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
+          Connecting fans through authentic jerseys that celebrate the 
+          beautiful game.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+        
+
+
+    </div>
+
+
+
+
   );
 };
 

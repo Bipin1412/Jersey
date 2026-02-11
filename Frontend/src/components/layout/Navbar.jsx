@@ -110,7 +110,7 @@ const Navbar = () => {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 w-full h-16 bg-amber-100 border-b z-50">
+      <nav className="fixed top-0 left-0 w-full h-18 bg-amber-100 border-b z-50 ">
         <div className="h-full px-4 flex items-center justify-between">
 
           {/* LEFT - Hamburger */}
@@ -124,22 +124,24 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="Logo"
-                className="h-16 object-contain cursor-pointer"
+                className="h-18 object-contain cursor-pointer"
               />
             </Link>
           </div>
 
           {/* RIGHT - Icons */}
           <div className="flex items-center gap-4">
-            <button onClick={() => setSearchOpen(true)}>
+            <button onClick={() => setSearchOpen(true)}
+              className="cursor-pointer"
+              >
               <Search size={22} />
             </button>
 
-            <button>
+            <button className="cursor-pointer">
               <User size={22} />
             </button>
 
-            <button>
+            <button className="cursor-pointer">
               <ShoppingCart size={22} />
             </button>
           </div>
