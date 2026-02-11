@@ -1,5 +1,43 @@
+// import { useState } from "react";
+// import IntroVideo from "./components/common/introVideo";
+// import Home from "./pages/Home";
+
+// function App() {
+//   const [showIntro, setShowIntro] = useState(true);
+//   const [fadeOut, setFadeOut] = useState(false);
+
+//   const handleIntroFinish = () => {
+//     setFadeOut(true);
+//     setTimeout(() => {
+//       setShowIntro(false);
+//     }, 700); // match animation
+//   };
+
+//   return (
+//     <>
+//       {/* Main App (Navbar + Home ALWAYS visible behind) */}
+//       <Home />
+
+//       {/* Intro Overlay */}
+//       {showIntro && (
+//         <IntroVideo onFinish={handleIntroFinish} fadeOut={fadeOut} />
+//       )}
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
 import IntroVideo from "./components/common/introVideo";
+import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 
 function App() {
@@ -10,13 +48,22 @@ function App() {
     setFadeOut(true);
     setTimeout(() => {
       setShowIntro(false);
-    }, 700); // match animation
+    }, 700);
   };
 
   return (
     <>
-      {/* Main App (Navbar + Home ALWAYS visible behind) */}
-      <Home />
+      {/* Main App */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <Home />
+            </MainLayout>
+          }
+        />
+      </Routes>
 
       {/* Intro Overlay */}
       {showIntro && (
@@ -27,7 +74,3 @@ function App() {
 }
 
 export default App;
-
-
-
-

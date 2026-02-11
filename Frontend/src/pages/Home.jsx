@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import CategoryCarousel from "../components/common/CategoryCarousel";
-import MainLayout from "../layouts/MainLayout";
 
 import banner1 from "../assets/img/banner-rondalo.png";
 import banner2 from "../assets/img/banner-2.jpeg";
@@ -35,8 +34,7 @@ const Home = () => {
   }, []);
 
   return (
-    <MainLayout>
-      <div className="bg-amber-100">
+    <div className="bg-amber-100">
 
       <section className="relative w-full min-h-screen overflow-hidden">
 
@@ -89,8 +87,7 @@ const Home = () => {
       <CategoryCarousel />
 
 
-      </div>
-    </MainLayout>
+    </div>
   );
 };
 
