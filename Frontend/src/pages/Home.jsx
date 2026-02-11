@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import CategoryCarousel from "../components/CategoryCarousel";
+import CategoryCarousel from "../components/common/CategoryCarousel";
 import MainLayout from "../layouts/MainLayout";
 
 import banner1 from "../assets/img/banner-rondalo.png";

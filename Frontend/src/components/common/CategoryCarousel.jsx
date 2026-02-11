@@ -3,17 +3,17 @@
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import vintage from "../assets/img/xi-1.jpeg";
-import varsity from "../assets/img/xi-2.jpeg";
-import joggers from "../assets/img/xi-3.jpeg";
-import leather from "../assets/img/xi-4.jpeg";
-import hoodie from "../assets/img/xi-5.jpeg";
-import sweatshirt from "../assets/img/xi-6.jpeg";
-import tracksuits from "../assets/img/xi-7.jpeg";
-import denim from "../assets/img/xi-8.jpeg";
-import bombers from "../assets/img/xi-9.jpeg";
-import oversized from "../assets/img/xi-10.jpeg";
-import accessories from "../assets/img/xi-11.jpeg";
+import vintage from "../../assets/img/xi-1.jpeg";
+import varsity from "../../assets/img/xi-2.jpeg";
+import joggers from "../../assets/img/xi-3.jpeg";
+import leather from "../../assets/img/xi-4.jpeg";
+import hoodie from "../../assets/img/xi-5.jpeg";
+import sweatshirt from "../../assets/img/xi-6.jpeg";
+import tracksuits from "../../assets/img/xi-7.jpeg";
+import denim from "../../assets/img/xi-8.jpeg";
+import bombers from "../../assets/img/xi-9.jpeg";
+import oversized from "../../assets/img/xi-10.jpeg";
+import accessories from "../../assets/img/xi-11.jpeg";
 
 const categories = [
   { title: "VINTAGE", image: vintage },

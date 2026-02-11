@@ -1,5 +1,5 @@
 import { useState } from "react";
-import IntroVideo from "./components/introVideo";
+import IntroVideo from "./components/common/introVideo";
 import Home from "./pages/Home";
 
 function App() {
