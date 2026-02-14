@@ -1,0 +1,264 @@
+﻿:root {
+  --navbar-height: 72px;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+.main-offset {
+  padding-top: var(--navbar-height);
+}
+
+.site-navbar {
+  height: var(--navbar-height);
+}
+
+.site-navbar-inner {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.site-navbar-logo {
+  height: var(--navbar-height);
+}
+
+.site-search-panel {
+  width: min(420px, 100vw);
+}
+
+.site-sidebar {
+  width: min(18rem, 88vw);
+}
+
+.home-page,
+.about-page {
+  width: 100%;
+}
+
+.home-hero {
+  min-height: calc(100svh - var(--navbar-height));
+}
+
+.home-hero-content {
+  min-height: inherit;
+}
+
+.home-sideeffect-desktop {
+  display: block;
+}
+
+.home-parallax-mobile {
+  display: none;
+}
+
+.category-carousel .carousel-track {
+  scroll-padding-inline: 1rem;
+}
+
+.about-timeline .timeline-scroll {
+  overflow-x: auto;
+  padding-inline: 1rem;
+}
+
+.about-timeline .timeline-scroll > div {
+  min-width: 560px;
+}
+
+.site-footer .container {
+  max-width: 1280px;
+}
+
+@media (max-width: 1024px) {
+  .home-about-blurb {
+    padding-inline: 1.25rem;
+  }
+
+  .site-footer-links {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 64px;
+  }
+
+  .site-navbar-inner {
+    padding-inline: 0.75rem;
+  }
+
+  .site-navbar-logo {
+    height: 56px;
+  }
+
+  .site-navbar-actions {
+    gap: 0.5rem;
+  }
+
+  .site-account-btn {
+    display: none;
+  }
+
+  .site-search-panel {
+    width: 100vw;
+  }
+
+  .home-hero-content {
+    padding-inline: 1rem;
+    align-items: flex-end;
+    padding-bottom: 4rem;
+  }
+
+  .home-sideeffect-desktop {
+    display: none;
+  }
+
+  .home-parallax-mobile {
+    display: block;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(1.9rem, 10vw, 2.5rem);
+    line-height: 1.1;
+  }
+
+  .home-hero p {
+    font-size: 0.8rem;
+  }
+
+  .shop-xi-heading h1,
+  .home-categories-title h1 {
+    font-size: clamp(1.6rem, 9vw, 2.4rem);
+  }
+
+  .category-carousel {
+    padding-block: 2.25rem;
+  }
+
+  .category-carousel .carousel-arrow {
+    display: none;
+  }
+
+  .category-carousel .carousel-track {
+    gap: 0.875rem;
+    padding-inline: 0.875rem;
+  }
+
+  .category-carousel .carousel-card {
+    min-width: 68vw;
+    height: 62vw;
+    max-height: 360px;
+  }
+
+  .home-category-grid .grid {
+    gap: 1rem;
+  }
+
+  .home-about-blurb .max-w-6xl {
+    gap: 1.75rem;
+  }
+
+  .home-about-blurb h2 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  .home-about-blurb p {
+    font-size: 0.95rem;
+  }
+
+  .about-hero {
+    padding-inline: 1rem;
+    padding-block: 2.5rem;
+    gap: 1.5rem;
+  }
+
+  .about-hero h2 {
+    font-size: clamp(1.8rem, 9vw, 2.4rem);
+    margin-bottom: 1rem;
+  }
+
+  .about-timeline {
+    padding-block: 3rem;
+  }
+
+  .about-timeline p {
+    padding-inline: 1rem;
+  }
+
+  .about-timeline .timeline-scroll {
+    padding-bottom: 0.5rem;
+  }
+
+  .about-timeline .timeline-scroll > div {
+    min-width: 620px;
+  }
+
+  .site-footer {
+    margin-top: 5rem;
+  }
+
+  .site-footer-content {
+    padding-inline: 1rem;
+  }
+
+  .site-footer-grid {
+    gap: 2rem;
+  }
+
+  .site-footer-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-footer-newsletter {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .site-footer-links {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .site-footer-links ul li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-navbar-actions button {
+    padding: 0.3rem;
+  }
+
+  .home-category-grid .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-category-grid .grid > div > div {
+    width: 7.25rem;
+    height: 7.25rem;
+  }
+
+  .site-footer .parallax svg {
+    height: 90px;
+  }
+}

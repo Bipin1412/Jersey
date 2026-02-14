@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 const Sidebar = ({ isOpen, onClose }) => {
   return (
     <div
-      className={`fixed top-0 left-0 h-full w-64 bg-white shadow-xl z-50 transform transition-transform duration-300 ${
+      className={`site-sidebar fixed top-0 left-0 h-full w-64 bg-white shadow-xl z-50 transform transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >

@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <main className="pt-16">
+      <main className="main-offset">
         <Outlet />
       </main>
     </>
@@ -13,3 +13,4 @@ const MainLayout = () => {
 };
 
 export default MainLayout;
+

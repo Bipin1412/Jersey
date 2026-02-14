@@ -2,7 +2,7 @@ import aboutImg from "../../assets/img/xi-1.jpeg";
 
 const AboutHero = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+    <section className="about-hero max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
       
       {/* LEFT IMAGE */}
       <div>
@@ -15,7 +15,7 @@ const AboutHero = () => {
 
       {/* RIGHT CONTENT */}
       <div>
-        <h2 className="text-4xl font-bold text-[#000091] mb-6">
+        <h2 className="text-4xl font-bold text-[#21304D] mb-6">
           About Us
         </h2>
 

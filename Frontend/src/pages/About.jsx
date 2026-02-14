@@ -3,7 +3,7 @@ import Timeline from "../components/about/Timeline";
 
 const About = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="about-page bg-gray-100">
       <AboutHero />
       <Timeline />
     </div>

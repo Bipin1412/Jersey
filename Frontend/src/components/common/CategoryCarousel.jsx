@@ -47,12 +47,12 @@ const CategoryCarousel = () => {
   };
 
   return (
-    <section className="relative py-14 bg-red-950">
+    <section className="category-carousel relative py-14 bg-red-950">
       
       {/* LEFT ARROW */}
       <button
         onClick={() => scroll("left")}
-        className="flex absolute left-3 top-1/2 -translate-y-1/2 z-20
+        className="carousel-arrow carousel-arrow-left flex absolute left-3 top-1/2 -translate-y-1/2 z-20
                    bg-white shadow-xl p-2 md:p-3 rounded-full hover:scale-105 transition"
       >
         <ChevronLeft size={20} className="md:w-6 md:h-6" />
@@ -61,7 +61,7 @@ const CategoryCarousel = () => {
       {/* RIGHT ARROW */}
       <button
         onClick={() => scroll("right")}
-        className="flex absolute right-3 top-1/2 -translate-y-1/2 z-20
+        className="carousel-arrow carousel-arrow-right flex absolute right-3 top-1/2 -translate-y-1/2 z-20
                    bg-white shadow-xl p-2 md:p-3 rounded-full hover:scale-105 transition"
       >
         <ChevronRight size={20} className="md:w-6 md:h-6" />
@@ -71,7 +71,7 @@ const CategoryCarousel = () => {
       <div
         ref={sliderRef}
         onWheel={handleWheel}
-        className="
+        className="carousel-track
           flex gap-6 overflow-x-auto scroll-smooth
           no-scrollbar pl-6 pr-6
           snap-x snap-mandatory
@@ -80,7 +80,7 @@ const CategoryCarousel = () => {
         {categories.map((item, index) => (
           <div
             key={index}
-            className="
+            className="carousel-card
               min-w-[260px] h-[420px]
               snap-start relative rounded-2xl
               overflow-hidden shadow-xl

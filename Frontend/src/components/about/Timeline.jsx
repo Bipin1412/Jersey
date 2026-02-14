@@ -13,7 +13,7 @@ const Timeline = () => {
   const [current, setCurrent] = useState(3);
 
   return (
-    <section className="py-20 bg-gray-50 text-center">
+    <section className="about-timeline py-20 bg-gray-50 text-center">
 
       <h3 className="text-2xl font-semibold mb-4">
         Persistence Paid Off
@@ -24,7 +24,7 @@ const Timeline = () => {
       </p>
 
       {/* LINE */}
-      <div className="relative max-w-5xl mx-auto">
+      <div className="timeline-scroll relative max-w-5xl mx-auto">
         <div className="absolute top-4 left-0 w-full h-[2px] bg-gray-300"></div>
 
         <div className="flex justify-between relative">
